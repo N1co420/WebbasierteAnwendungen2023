@@ -3,21 +3,15 @@ package classes;
 // Import the necessary classes
 import java.time.LocalDateTime;
 
+
 // Define the Project class
+
 public class Project {
     // Define the private fields
     private String title; // The title of the project
     private String shortDescription; // A short description of the project
     private String projectLogoPath; // The path to the project logo
     private LocalDateTime projectStartDate; // The date the project started
-
-    // Define the constructor that initializes the fields
-    public Project(String title, String shortDescription, String projectLogoPath, LocalDateTime projectStartDate) {
-        this.title = title;
-        this.shortDescription = shortDescription;
-        this.projectLogoPath = projectLogoPath;
-        this.projectStartDate = projectStartDate;
-    }
 
     // Define the getter methods for the fields
     public String getTitle() {
