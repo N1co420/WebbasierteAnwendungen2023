@@ -13,12 +13,12 @@ import java.time.LocalDateTime;
 public class ProjectAdapter {
     private String titel;
     private String startdate;
-    private Long id;
+    private int id;
 
     public void setTitle(String title) {
         this.titel = title;
     }
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -28,7 +28,7 @@ public class ProjectAdapter {
 
     public Project toProject() {
         Project proj = new Project();
-        //proj.setId(this.id);
+        proj.setId(this.id);
         proj.setTitle(this.titel);
         proj.setProjectStartDate(LocalDateTime.parse(this.startdate));  //ISO-Datumsformat yyyy-mm-ddT10:15:30
         return proj;

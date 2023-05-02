@@ -12,11 +12,28 @@ public class Project implements Serializable {
 
     // Private instance variables to store the project's title, short description, logo path, and start date.
     private static final long serialVersionUID = 1L;
+    private int id;
     private String title;
     private String shortDescription;
     private String projectLogoPath;
     private LocalDateTime projectStartDate;
 
+    /**
+     * Sets the id of the project.
+     *
+     * @param id The new id of the project.
+     */
+    public void setId(int id)
+    {
+        this.id  = id;
+    }
+
+    /**
+     * Returns the project's id.
+     *
+     * @return The id of the project.
+     */
+    public int getId() {return id;}
     /**
      * Returns the project's title.
      *
