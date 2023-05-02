@@ -1,8 +1,10 @@
 package classes;
 
+import javax.xml.bind.annotation.XmlRootElement;
 /**
  * This is a Java class that represents a project artifact.
  */
+@XmlRootElement
 public class Project_Artefact {
 
     // Private instance variables to store the artifact's ID and work time.

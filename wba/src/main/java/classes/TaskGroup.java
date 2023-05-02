@@ -1,8 +1,10 @@
 package classes;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Java class to create a TaskGroup
  */
+@XmlRootElement
 public class TaskGroup{
 
     /**

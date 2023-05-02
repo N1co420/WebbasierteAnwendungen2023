@@ -1,8 +1,10 @@
 package classes;
 
+import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Represents an artefact, which has an ID, title, description and planned work time.
  */
+@XmlRootElement
 public class Artefact   {
 
     private int id; // The unique identifier of the artefact

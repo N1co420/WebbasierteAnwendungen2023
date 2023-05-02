@@ -1,8 +1,10 @@
 package  classes;
 
+import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Java class to present a Project TaskGroup
  */
+@XmlRootElement
 public class Project_TaskGroup{
 
     //private int class varibale to store the id of a project
