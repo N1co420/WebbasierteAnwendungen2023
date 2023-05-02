@@ -8,7 +8,7 @@ import java.io.Serializable;
 @XmlRootElement
 public class Artefact implements Serializable  {
     private static final long serialVersionUID = 1L;
-    private int id; // The unique identifier of the artefact
+    private long id; // The unique identifier of the artefact
     private String title; // The title of the artefact
     private String description; // A brief description of the artefact
     private String plannedWorkTime; // The amount of planned work time for the artefact
@@ -72,7 +72,7 @@ public class Artefact implements Serializable  {
      *
      * @return The unique identifier of the artefact
      */
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -81,7 +81,7 @@ public class Artefact implements Serializable  {
      *
      * @param id The unique identifier of the artefact
      */
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 }
