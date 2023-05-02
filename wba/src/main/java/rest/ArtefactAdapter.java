@@ -32,6 +32,4 @@ public class ArtefactAdapter {
         artefact.setPlannedWorkTime(this.plannedWorkTime);
         return artefact;
     }
-
-
 }
