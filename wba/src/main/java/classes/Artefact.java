@@ -1,11 +1,12 @@
 package classes;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 /**
  * Represents an artefact, which has an ID, title, description and planned work time.
  */
 @XmlRootElement
-public class Artefact   {
+public class Artefact implements Serializable  {
 
     private int id; // The unique identifier of the artefact
     private String title; // The title of the artefact

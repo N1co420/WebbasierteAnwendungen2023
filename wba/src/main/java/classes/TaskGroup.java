@@ -1,11 +1,11 @@
 package classes;
 import javax.xml.bind.annotation.XmlRootElement;
-
+import java.io.Serializable;
 /**
  * Java class to create a TaskGroup
  */
 @XmlRootElement
-public class TaskGroup{
+public class TaskGroup implements Serializable{
 
     /**
      * // Private instance variables to store the TaskGroups title

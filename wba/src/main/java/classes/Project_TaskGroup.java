@@ -1,11 +1,12 @@
 package  classes;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 /**
  * Java class to present a Project TaskGroup
  */
 @XmlRootElement
-public class Project_TaskGroup{
+public class Project_TaskGroup implements Serializable{
 
     //private int class varibale to store the id of a project
     private int idProject;

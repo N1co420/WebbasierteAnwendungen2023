@@ -3,12 +3,12 @@ package classes;
 // Import the necessary classes
 import java.time.LocalDateTime;
 import javax.xml.bind.annotation.XmlRootElement;
-
+import java.io.Serializable;
 /**
  * This is a simple Java class that represents a project.
  */
 @XmlRootElement
-public class Project {
+public class Project implements Serializable {
 
     // Private instance variables to store the project's title, short description, logo path, and start date.
     private String title;
