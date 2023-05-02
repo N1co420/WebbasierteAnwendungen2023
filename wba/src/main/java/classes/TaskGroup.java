@@ -6,7 +6,7 @@ import java.io.Serializable;
  */
 @XmlRootElement
 public class TaskGroup implements Serializable{
-
+    private static final long serialVersionUID = 1L;
     /**
      * // Private instance variables to store the TaskGroups title
      */

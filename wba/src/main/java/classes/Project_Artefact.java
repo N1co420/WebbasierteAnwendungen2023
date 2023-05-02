@@ -9,6 +9,7 @@ import java.io.Serializable;
 public class Project_Artefact implements Serializable{
 
     // Private instance variables to store the artifact's ID and work time.
+    private static final long serialVersionUID = 1L;
     private int id;
     private String work_time;
 

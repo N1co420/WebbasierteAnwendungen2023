@@ -9,6 +9,7 @@ import java.io.Serializable;
 public class Project_TaskGroup implements Serializable{
 
     //private int class varibale to store the id of a project
+    private static final long serialVersionUID = 1L;
     private int idProject;
 
     //private int class variable to store the id of a Task Group

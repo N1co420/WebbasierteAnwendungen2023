@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 @XmlRootElement
 public class Artefact implements Serializable  {
-
+    private static final long serialVersionUID = 1L;
     private int id; // The unique identifier of the artefact
     private String title; // The title of the artefact
     private String description; // A brief description of the artefact

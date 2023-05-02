@@ -11,6 +11,7 @@ import java.io.Serializable;
 public class Project implements Serializable {
 
     // Private instance variables to store the project's title, short description, logo path, and start date.
+    private static final long serialVersionUID = 1L;
     private String title;
     private String shortDescription;
     private String projectLogoPath;
