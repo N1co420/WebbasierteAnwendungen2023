@@ -13,12 +13,12 @@ import java.time.LocalDateTime;
 public class ProjectAdapter {
     private String titel;
     private String startdate;
-    private int id;
+    private Long id;
 
     public void setTitle(String title) {
         this.titel = title;
     }
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -37,9 +37,9 @@ public class ProjectResource implements Serializable {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response get(@QueryParam("id") int id) {
+    public Response get(@QueryParam("id") Long id) {
         Project proj = new Project();
-        proj.setId(1);
+        proj.setId(1L);
         proj.setTitle("exampleTitel");
         ResponseBuilder rb = Response.ok(proj);
 
