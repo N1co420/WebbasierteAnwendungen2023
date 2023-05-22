@@ -23,7 +23,6 @@ public class ProjectResource implements Serializable {
     @Produces(MediaType.APPLICATION_JSON)
     public Response create(ProjectAdapter pa) {
 
-
         //adapter in Objekt umwandeln - Adapater zur Umwandlung des Datums von JSON und für Referenzen notwendig
         Project proj= pa.toProject();
         URI location = URI.create("/projekt?id=" + proj.getId());  // hier ann man das angelegte abrufen
@@ -34,10 +33,10 @@ public class ProjectResource implements Serializable {
         return rb.build();
 
     }
-
+    @Path("/id/{id}")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response get(@QueryParam("id") Long id) {
+    public Response getSpecific(@QueryParam("id") Long id) {
         Project proj = new Project();
         proj.setId(1L);
         proj.setTitle("exampleTitel");
