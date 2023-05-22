@@ -10,19 +10,28 @@ import jakarta.xml.bind.annotation.XmlRootElement;
  * @author ffehring
  */
 @XmlRootElement
+@Entity
+@Table(name = "project")
+@NamedQueries({
+        @NamedQuery(name = "project.getList", query = "SELECT p FROM Project p"),
+        @NamedQuery(name = "project.getSpecific", query = "SELECT p FROM Project p WHERE p.id = :id"),
+        @NamedQuery(name = "project.getTitle", query = "SELECT p FROM Project p WHERE p.title = :title"),
+})
 public class Projekt implements Serializable {
 
     private static final long serialVersionUID = 1L;
    
-    private Long id;
-    
-    private String titel;
-    
-    private String kurzbeschreibung;
-    
-    private String logopath;
-    
-    private LocalDateTime startdatum;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column(name = "title")
+    private String title;
+    @Column(name = "description")
+    private String description;
+    @Column(name = "logo_path")
+    private String logoPath;
+    @Column(name = "start_date")
+    private LocalDateTime startDate;
 
     
  

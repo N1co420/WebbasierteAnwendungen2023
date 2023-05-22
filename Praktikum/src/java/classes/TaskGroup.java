@@ -5,20 +5,23 @@ import java.io.Serializable;
  * Java class to create a TaskGroup
  */
 @XmlRootElement
+@Entity
+@Table(name = "Task_group")
+@NamedQueries({
+        @NamedQuery(name = "Task_group.getAll", query = "SELECT t FROM TaskGroup t")
+})
 public class TaskGroup implements Serializable{
     private static final long serialVersionUID = 1L;
     /**
      * // Private instance variables to store the TaskGroups title
      */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column(name = "title")
     private String title;
-    /**
-     * // Private instance variables to store the TaskGroups descrition
-     */
-    private String shortDescription;
-    /**
-     * // Private instance variables to store the TaskGroups id
-     */
-    private Long id;
+    @Column(name = "description")
+    private String description;
 
     /**
      * define the constructor with two parameters for the private class Strings

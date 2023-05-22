@@ -6,12 +6,25 @@ import java.io.Serializable;
  * Represents an artefact, which has an ID, title, description and planned work time.
  */
 @XmlRootElement
+@Entity
+@Table(name = "artefact")
+@NamedQueries({
+        @NamedQuery(name = "artefact.getList", query = "SELECT a FROM Artefact a"),
+        @NamedQuery(name = "artefact.getById", query = "SELECT a FROM Artefact a WHERE a.id = :id"),
+        @NamedQuery(name = "artefact.getByTitle", query = "SELECT a FROM Artefact a WHERE a.title = :title")
+
+})
 public class Artefact implements Serializable  {
     private static final long serialVersionUID = 1L;
-    private Long id; // The unique identifier of the artefact
-    private String title; // The title of the artefact
-    private String description; // A brief description of the artefact
-    private String plannedWorkTime; // The amount of planned work time for the artefact
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column(name = "title")
+    private String title;
+    @Column(name = "description")
+    private String description;
+    @Column(name = "planned_work_time")
+    private String plannedWorkTime;
 
     /**
      * Returns the title of the artefact.

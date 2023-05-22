@@ -6,54 +6,27 @@ import java.io.Serializable;
  * Java class to present a Project TaskGroup
  */
 @XmlRootElement
+@Entity
+@Table(name = "project_taskgroup")
 public class Project_TaskGroup implements Serializable{
 
     //private int class varibale to store the id of a project
     private static final long serialVersionUID = 1L;
-    private int idProject;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column(name = "project_id")
+    @OneToMany()
+    private Collection<Project> ProjectId;
+    @Column(name = "taskgroup_id")
+    @OneToMany()
+    private Collection<TaskGroup> TaskGroupId;
 
-    //private int class variable to store the id of a Task Group
-    private int idTaskGroup;
-
-    /**
-     * to create a new objekt of this class with ids of a Project and task Group
-     * @param idProject int id from Project object
-     * @param idTaskGroup int id from TaskGroup object
-     */
-    public Project_TaskGroup(int idProject, int idTaskGroup){
-        this.idProject=idProject;
-        this.idTaskGroup=idTaskGroup;
+    public int getId() {
+        return id;
     }
 
-    /**
-     * to return the id of the used project
-     * @return the id of the used Project
-     */
-    public int getIdProject() {
-        return idProject;
-    }
-    /**
-     * to change the id of the id of the project
-     * @param idProject new int id for a project
-     */
-    public void setIdProject(int idProject) {
-        this.idProject = idProject;
-    }
-
-
-    /**
-     * to return the id of the TaskGroup
-     * @return id of the used taskGroup
-     */
-    public int getIdTaskGroup() {
-        return idTaskGroup;
-    }
-
-    /**
-     * change the id for taskGroup
-     * @param idTaskGroup int id for the new TaskGroup
-     */
-    public void setIdTaskGroup(int idTaskGroup) {
-        this.idTaskGroup = idTaskGroup;
+    public void setId(int id) {
+        this.id = id;
     }
 }

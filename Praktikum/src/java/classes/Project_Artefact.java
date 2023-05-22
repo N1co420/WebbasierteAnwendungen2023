@@ -6,11 +6,16 @@ import java.io.Serializable;
  * This is a Java class that represents a project artifact.
  */
 @XmlRootElement
+@Entity
+@Table(name = "project_artefact")
 public class Project_Artefact implements Serializable{
 
     // Private instance variables to store the artifact's ID and work time.
     private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(name = "work_time")
     private String work_time;
 
     /**
