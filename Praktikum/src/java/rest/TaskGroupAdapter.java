@@ -1,6 +1,6 @@
 package rest;
 
-import classes.TaskGroup;
+import database.TaskGroup;
 public class TaskGroupAdapter {
     private String title;
     private String shortDescritpion;

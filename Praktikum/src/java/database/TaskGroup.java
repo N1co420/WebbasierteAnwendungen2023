@@ -1,4 +1,6 @@
-package classes;
+package database;
+
+import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 /**

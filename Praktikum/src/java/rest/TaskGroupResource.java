@@ -1,5 +1,5 @@
 package rest;
-import classes.TaskGroup;
+import database.TaskGroup;
 import java.io.Serializable;
 import java.net.URI;
 import jakarta.ws.rs.Consumes;

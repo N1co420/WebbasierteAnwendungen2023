@@ -1,6 +1,6 @@
 package rest;
 
-import classes.Artefact;
+import database.Artefact;
 import java.net.URI;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;

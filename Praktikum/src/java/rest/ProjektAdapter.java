@@ -1,6 +1,6 @@
 package rest;
 
-import classes.Projekt;
+import database.Projekt;
 import java.time.LocalDateTime;
 
 /**

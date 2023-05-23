@@ -1,7 +1,7 @@
 package rest;
 
 
-import classes.Artefact;
+import database.Artefact;
 public class ArtefactAdapter {
 
     private Long id;
