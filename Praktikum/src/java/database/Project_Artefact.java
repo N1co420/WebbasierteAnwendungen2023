@@ -15,7 +15,7 @@ public class Project_Artefact implements Serializable{
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @Column(name = "work_time")
     private String work_time;
 
@@ -42,7 +42,7 @@ public class Project_Artefact implements Serializable{
      *
      * @return The ID of the artifact.
      */
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -51,7 +51,7 @@ public class Project_Artefact implements Serializable{
      *
      * @param id The new ID of the artifact.
      */
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

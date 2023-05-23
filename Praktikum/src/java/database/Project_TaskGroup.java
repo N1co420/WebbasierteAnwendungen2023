@@ -16,7 +16,7 @@ public class Project_TaskGroup implements Serializable{
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @Column(name = "project_id")
     @OneToMany()
     private Collection<Projekt> ProjectId;
@@ -24,11 +24,11 @@ public class Project_TaskGroup implements Serializable{
     @OneToMany()
     private Collection<TaskGroup> TaskGroupId;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

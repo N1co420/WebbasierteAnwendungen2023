@@ -19,7 +19,7 @@ public class Artefact implements Serializable  {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @Column(name = "title")
     private String title;
     @Column(name = "description")
@@ -81,11 +81,11 @@ public class Artefact implements Serializable  {
         this.plannedWorkTime = plannedWorkTime;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

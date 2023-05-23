@@ -25,7 +25,7 @@ public class Projekt implements Serializable {
    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @Column(name = "title")
     private String title;
     @Column(name = "description")
@@ -67,11 +67,11 @@ public class Projekt implements Serializable {
         this.startDate = startDate;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
     

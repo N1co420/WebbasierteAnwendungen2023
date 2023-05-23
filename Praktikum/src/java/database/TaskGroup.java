@@ -19,7 +19,7 @@ public class TaskGroup implements Serializable{
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @Column(name = "title")
     private String title;
     @Column(name = "description")
@@ -41,11 +41,11 @@ public class TaskGroup implements Serializable{
         this.description = description;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 }
