@@ -34,46 +34,44 @@ public class Projekt implements Serializable {
     private String logoPath;
     @Column(name = "start_date")
     private LocalDateTime startDate;
-
-    
  
-    public String getTitel() {
-        return titel;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTitel(String titel) {
-        this.titel = titel;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getKurzbeschreibung() {
-        return kurzbeschreibung;
+    public String getDescription() {
+        return description;
     }
 
-    public void setKurzbeschreibung(String kurzbeschreibung) {
-        this.kurzbeschreibung = kurzbeschreibung;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getLogopath() {
-        return logopath;
+    public String getLogoPath() {
+        return logoPath;
     }
 
-    public void setLogopath(String logopath) {
-        this.logopath = logopath;
+    public void setLogoPath(String logoPath) {
+        this.logoPath = logoPath;
     }
 
-    public LocalDateTime getStartdatum() {
-        return startdatum;
+    public LocalDateTime getStartDate() {
+        return startDate;
     }
 
-    public void setStartdatum(LocalDateTime startdatum) {
-        this.startdatum = startdatum;
+    public void setStartDate(LocalDateTime startDate) {
+        this.startDate = startDate;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
     

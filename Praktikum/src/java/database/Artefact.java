@@ -81,21 +81,11 @@ public class Artefact implements Serializable  {
         this.plannedWorkTime = plannedWorkTime;
     }
 
-    /**
-     * Returns the unique identifier of the artefact.
-     *
-     * @return The unique identifier of the artefact
-     */
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    /**
-     * Sets the unique identifier of the artefact.
-     *
-     * @param id The unique identifier of the artefact
-     */
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 }

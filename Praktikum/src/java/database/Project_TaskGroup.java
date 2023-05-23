@@ -3,6 +3,7 @@ package  database;
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
+import java.util.Collection;
 /**
  * Java class to present a Project TaskGroup
  */
@@ -18,7 +19,7 @@ public class Project_TaskGroup implements Serializable{
     private int id;
     @Column(name = "project_id")
     @OneToMany()
-    private Collection<Project> ProjectId;
+    private Collection<Projekt> ProjectId;
     @Column(name = "taskgroup_id")
     @OneToMany()
     private Collection<TaskGroup> TaskGroupId;
