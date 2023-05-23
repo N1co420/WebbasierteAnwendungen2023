@@ -47,7 +47,7 @@ public class ProjektResource implements Serializable {
     public Response get(@QueryParam("id") Long id) {
         Projekt proj = new Projekt();
         proj.setId(1l);
-        proj.setTitel("exampleTitel");
+        proj.setTitle("exampleTitel");
         ResponseBuilder rb = Response.ok(proj);
         
         return rb.build();

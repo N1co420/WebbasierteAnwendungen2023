@@ -22,7 +22,7 @@ public class TaskGroupAdapter {
         TaskGroup taskGroup = new TaskGroup();
         taskGroup.setId(this.id);
         taskGroup.setTitle(this.title);
-        taskGroup.setShortDescription(this.shortDescritpion);
+        taskGroup.setDescription(this.shortDescritpion);
         return taskGroup;
     }
 }

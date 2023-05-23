@@ -28,8 +28,8 @@ public class ProjektAdapter {
     public Projekt toProject() {
         Projekt proj = new Projekt();
         proj.setId(this.id);
-        proj.setTitel(this.titel);
-        proj.setStartdatum(LocalDateTime.parse(this.startdate));  //ISO-Datumsformat yyyy-mm-ddT10:15:30
+        proj.setTitle(this.titel);
+        proj.setStartDate(LocalDateTime.parse(this.startdate));  //ISO-Datumsformat yyyy-mm-ddT10:15:30
         return proj;
     }
 }

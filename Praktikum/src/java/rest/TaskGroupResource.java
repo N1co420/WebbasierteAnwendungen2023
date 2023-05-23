@@ -33,7 +33,7 @@ public class TaskGroupResource implements Serializable{
         TaskGroup taskGroup = new TaskGroup();
         taskGroup.setId(1l);
         taskGroup.setTitle("exampleTitleTaskGroup");
-        taskGroup.setShortDescription("exampleShortDescrition");
+        taskGroup.setDescription("exampleShortDescrition");
 
         ResponseBuilder rb = Response.ok(taskGroup);
         return rb.build();
