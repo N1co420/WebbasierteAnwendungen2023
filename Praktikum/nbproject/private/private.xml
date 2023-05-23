@@ -3,7 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/UNI/4%20Semester/WBA/WebbasierteAnwendungen2023/Praktikum/src/java/classes/Artefact.java</file>
+            <file>file:/C:/UNI/4%20Semester/WBA/WebbasierteAnwendungen2023/Praktikum/src/java/rest/ArtefactResource.java</file>
+            <file>file:/C:/UNI/4%20Semester/WBA/WebbasierteAnwendungen2023/Praktikum/src/java/database/Artefact.java</file>
+            <file>file:/C:/UNI/4%20Semester/WBA/WebbasierteAnwendungen2023/Praktikum/src/java/rest/ApplicationConfig.java</file>
+            <file>file:/C:/UNI/4%20Semester/WBA/WebbasierteAnwendungen2023/Praktikum/src/java/rest/ProjektAdapter.java</file>
         </group>
     </open-files>
 </project-private>

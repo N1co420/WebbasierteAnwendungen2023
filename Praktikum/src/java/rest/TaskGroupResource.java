@@ -11,6 +11,8 @@ import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.Response.ResponseBuilder;
+import jakarta.persistence.*;
+
 @Path("taskgroup")
 public class TaskGroupResource implements Serializable{
 
@@ -37,6 +39,22 @@ public class TaskGroupResource implements Serializable{
 
         ResponseBuilder rb = Response.ok(taskGroup);
         return rb.build();
+    }
+    
+    @Path("/id/{id}")
+    @GET
+    @Produces("application/json")
+    public Response getSpecific(@QueryParam("id") int id) {
+        Response.ResponseBuilder builder = Response.ok(TaskGroup.getTaskGroupById(id));
+        return builder.build();
+    }
+
+    @Path("/title/{title}")
+    @GET
+    @Produces("application/json")
+    public Response getName(@QueryParam("title") String title) {
+        Response.ResponseBuilder builder = Response.ok(TaskGroup.getTaskGroupByTitle(title));
+        return builder.build();
     }
 
 }
