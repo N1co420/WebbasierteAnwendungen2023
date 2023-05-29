@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskHelper</title>
+    <title>Neues Projekt - TaskHelper</title>
 </head>
 
 <body>
@@ -33,33 +33,22 @@
         </div>
     </header>
     <main>
-        <h1>Willkommen bei <br>Taskhelper</h1>
+        <h1>Neues Projekt</h1>
         <div>
-            <h2>Kurzbeschreibung</h2>
-            <p>Was ist TaskHelper und wie funktioniert es? Schau dir unser Tutorial an!</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/n86M4NXb5eE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            <div>
-                <h2>Neueste Projekte</h2>
-                <div>
-                    <a href="./projektdetails.html?id=1">
-                        <h3>Projekt 1</h3>
-                    </a>
-                    <div>
-                        <div>
-                            <img src="images/projects/1.png" alt="Projekt 1">
-
-                            <div>
-                                <p>Hier steht eine kurze Beschreibung des Projekts.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Molestias laboriosam voluptate dolorem minima delectus eligendi exercitationem explicabo expedita. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <form action="projekte.html" method="get">
+                <input type="text" placeholder="Projekttitel" required id= "projekttitel">
+                <input type="date" placeholder="Startdatum" required id= "start-date-input">
+                <input type="date" placeholder="Enddatum" required id= "end-date-input">
+                <input type="text" placeholder="Kurzbeschreibung" required id = "kurzbeschreibung">
+                <input type="text" placeholder="Langbeschreibung" id= "langbeschreibung">
+                <input type="text" placeholder="1. Projektziel" id= "1projektziel">
+                <input type="text" placeholder="2. Projektziel" id= "2projektziel">
+                <input type="file" accept="image/*" hidden required id="logo-input">
+                <input type="button" value="Logo auswählen..."
+                    onclick="document.getElementById('logo-input').click();" />
+                <button type="submit" id="save-button">Speichern</button>
+            </form>
+            <img hidden src="" alt="Logo" id="logo_showcase">
         </div>
     </main>
     <footer>
@@ -91,4 +80,5 @@
         </div>
     </footer>
 </body>
+
 </html>
