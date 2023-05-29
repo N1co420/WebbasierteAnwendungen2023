@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>WBA Projekt2023</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Startseite des WBA-Projekts2023">
+    <meta name="description" content="Proejtkuebersicht Seite zum finden von bestimmten Projekten">
     <meta name="keywords" content="HTML">
+    <title>Projektuebersicht</title>
+
     <style>
         .header {
             background-image: url(header1920x200.png);
@@ -40,35 +41,39 @@
         }
 
     </style>
-</head>
 
+</head>
 <body>
-<header class="header">
+<header>
     <a href="startseite.html"><img src="startseite.svg" alt="Startseite"></a>
-    <a href="projekt.html">Projekte</a>
-    <a href="neuesProjekt.html">Neues Projekt</a>
+    <a href="projekte.html">Projekte</a>
+    <a href="neues_projekt.html">Neues Projekt</a>
 </header>
 
-<section>
-    <h1>Hier werden spannende Projekte enstehen<br>von unglaublich motivierten Studenten</h1>
-</section>
-
-<section>
-    <h2>Herzlich Willkommen auf der Startseite!</h2>
-    <p>
-        Diese Website bietet die Möglichkeit eigene Projekte hoch zu laden und zur Schau zu stellen
-    </p>
-    <iframe width="560" src="https://www.youtube.com/watch?v=yYZH7B498gE" allow="autoplay; encrypted-media"
-            allowfullscreen></iframe>
-</section>
-
-<section>
-    <h2>Die neusten Projekte</h2>
+<nav>
     <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li><a href="#projekt1">Projekt 1</a></li>
+        <li><a href="#projekt2">Projekt 2</a></li>
+        <li><a href="#projekt3">Projekt 3</a></li>
     </ul>
+</nav>
+
+<section id="projekt1">
+    <h2>Projekt 1</h2>
+    <p>Kurzbeschreibung des Projekts 1</p>
+    <a href="projekt1.html">Weitere Informationen</a>
+</section>
+
+<section id="projekt2">
+    <h2>Projekt 2</h2>
+    <p>Kurzbeschreibung des Projekts 2</p>
+    <a href="projekt2.html">Weitere Informationen</a>
+</section>
+
+<section id="projekt3">
+    <h2>Projekt 3</h2>
+    <p>Kurzbeschreibung des Projekts 3</p>
+    <a href="projekt3.html">Weitere Informationen</a>
 </section>
 
 <section>
@@ -84,7 +89,6 @@
     </form>
     <p>Noch kein Konto? <a href="registrieren.html">Neu registrieren</a></p>
 </section>
-
 
 <footer>
     <div>

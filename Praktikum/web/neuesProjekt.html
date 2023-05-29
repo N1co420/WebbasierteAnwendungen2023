@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>WBA Projekt2023</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Startseite des WBA-Projekts2023">
-    <meta name="keywords" content="HTML">
+    <title>Neues Projekt</title>
+    <meta name="description" content="Erstelle ein neues Projekt.">
+
     <style>
         .header {
             background-image: url(header1920x200.png);
@@ -41,7 +41,6 @@
 
     </style>
 </head>
-
 <body>
 <header class="header">
     <a href="startseite.html"><img src="startseite.svg" alt="Startseite"></a>
@@ -49,27 +48,37 @@
     <a href="neuesProjekt.html">Neues Projekt</a>
 </header>
 
-<section>
-    <h1>Hier werden spannende Projekte enstehen<br>von unglaublich motivierten Studenten</h1>
-</section>
+<main>
+    <h1>Neues Projekt erstellen</h1>
 
-<section>
-    <h2>Herzlich Willkommen auf der Startseite!</h2>
-    <p>
-        Diese Website bietet die Möglichkeit eigene Projekte hoch zu laden und zur Schau zu stellen
-    </p>
-    <iframe width="560" src="https://www.youtube.com/watch?v=yYZH7B498gE" allow="autoplay; encrypted-media"
-            allowfullscreen></iframe>
-</section>
+    <form action="projekt_erstellen.php" method="post" enctype="multipart/form-data">
+        <label for="projekttitel">Projekttitel:</label>
+        <input type="text" id="projekttitel" name="projekttitel" required><br>
 
-<section>
-    <h2>Die neusten Projekte</h2>
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
-</section>
+        <label for="startdatum">Startdatum:</label>
+        <input type="date" id="startdatum" name="startdatum" required><br>
+
+        <label for="enddatum">Enddatum:</label>
+        <input type="date" id="enddatum" name="enddatum" required><br>
+
+        <label for="kurzbeschreibung">Kurzbeschreibung:</label><br>
+        <textarea id="kurzbeschreibung" name="kurzbeschreibung" rows="4" cols="50" required></textarea><br>
+
+        <label for="langbeschreibung">Langbeschreibung:</label><br>
+        <textarea id="langbeschreibung" name="langbeschreibung" rows="8" cols="50" required></textarea><br>
+
+        <label for="projektziel1">Projektziel 1:</label>
+        <input type="text" id="projektziel1" name="projektziele[]" required><br>
+
+        <label for="projektziel2">Projektziel 2:</label>
+        <input type="text" id="projektziel2" name="projektziele[]"><br>
+
+        <label for="logodatei">Logodatei:</label>
+        <input type="file" id="logodatei" name="logodatei"><br>
+
+        <input type="submit" value="Projekt erstellen">
+    </form>
+</main>
 
 <section>
     <h3>Login</h3>

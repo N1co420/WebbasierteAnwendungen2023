@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seite um ein einzelnes Projekt darzustellen">
+    <meta name="keywords" content="HTML">
+
+
+    <title>WBA Projekt2023</title>
+
+    <style>
+        .header {
+            background-image: url(header1920x200.png);
+            height: 200px
+        }
+
+        @media screen and(max-width: 1920px) {
+            .header {
+                background-image: url(header1920x200.png);
+            }
+        }
+
+        @media screen and(max-width: 1280px) {
+            .header {
+                background-image: url(header1280x133.png);
+                height: 133px;
+            }
+        }
+
+        @media screen and(max-width: 640px) {
+            .header {
+                background-image: url(header640x67.png);
+                height: 67px;
+            }
+        }
+
+        @media screen and(max-width: 320px) {
+            .header {
+                background-image: url(header320x34.png);
+                height: 34px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <a href="startseite.html"><img src="startseite.svg" alt="Startseite"></a>
+    <a href="projekte.html">Projekte</a>
+    <a href="neues_projekt.html">Neues Projekt</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#projektlogo">Projektlogo</a></li>
+        <li><a href="#projektleiter">Projektleiter</a></li>
+        <li><a href="#kurzbeschreibung">Kurzbeschreibung</a></li>
+        <li><a href="#langbeschreibung">Langbeschreibung</a></li>
+        <li><a href="#projektziele">Projektziele</a></li>
+        <li><a href="#kommentar">Kommentar</a></li>
+    </ul>
+</nav>
+
+<section id="projektlogo">
+    <h2>Projektlogo</h2>
+    <img src="projekt1_logo.png" alt="Projekt 1 Logo">
+</section>
+
+<section id="projektleiter">
+    <h2>Projektleiter</h2>
+    <p>Name des Projektleiters</p>
+</section>
+
+<section id="kurzbeschreibung">
+    <h2>Kurzbeschreibung</h2>
+    <p>Kurzbeschreibung des Projekts</p>
+</section>
+
+<section id="langbeschreibung">
+    <h2>Langbeschreibung</h2>
+    <p>Längere Beschreibung des Projekts</p>
+</section>
+
+<section id="projektziele">
+    <h2>Projektziele</h2>
+    <ol>
+        <li>Ziel 1</li>
+        <li>Ziel 2</li>
+    </ol>
+</section>
+
+<section id="kommentar">
+    <h2>Kommentar</h2>
+    <form action="kommentar.php" method="POST">
+        <label for="textkommentar">Textkommentar:</label>
+        <textarea id="textkommentar" name="textkommentar" rows="4" cols="50"></textarea>
+        <label for="bewertung">Bewertung (1-5):</label>
+        <input type="number" id="bewertung" name="bewertung" min="1" max="5">
+        <input type="submit" value="Kommentar absenden">
+    </form>
+</section>
+
+<footer>
+    <div>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklaerung</a>
+        <a href="haftung.html">Haftungsauschluss</a>
+    </div>
+    <div>
+        &copy; 2023 WBAProjekt Edler,Huebner,Heim.
+        Kontakt: bitte nicht kontaktieren.com
+    </div>
+    <div>
+        <a href="#top">Zurueck zum Seiten Anfang</a>
+    </div>
+</footer>
+</body>
+</html>
