@@ -33,7 +33,10 @@
         </div>
     </header>
     <main class="main">
-        <h1 class="main_title">Willkommen bei <br>Taskhelper</h1>
+        <h1 class="main_title">
+            <span class="first_line">Willkommen bei</span> <br>
+            <span class="second_line">Taskhelper</span>
+        </h1>
         <div class="main_content">
             <h2 class="main_subtitle">Kurzbeschreibung</h2>
             <p>Was ist TaskHelper und wie funktioniert es? Schau dir unser Tutorial an!</p>
@@ -189,27 +192,39 @@
         font-weight: bold;
         color: #000000;
         text-align: center;
-        display: flex;
         align-items: center;
         justify-content: center;
+        /*display: flex;
         opacity: 0;
-        animation: titleAnimation 6s infinite;
+        /*animation: titleAnimation 6s infinite;*/
     }
 
-    @keyframes titleAnimation {
-    0% {
-        opacity: 0;        
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    .first_line {
+    animation: fade-out 5s forwards;
     }
 
-    .main_title:nth-child(2) {
-        animation-delay: 3s;
+    .second_line {
+        opacity: 0; /* Anfangs unsichtbar machen */
+        animation: fade-in 5s forwards;
+        animation-delay: 5s; /* Delay für die Einblendung der zweiten Zeile */
+    }
+
+    @keyframes fade-out {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .main_subtitle {
