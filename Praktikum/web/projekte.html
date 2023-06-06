@@ -235,6 +235,15 @@
         margin-bottom: 4px;
     }
 
+    #project-filter {
+        display: none; /* Filter-Optionen standardmäßig ausblenden */
+    }
+
+    label[for="project-filter"]:hover + #project-filter,
+    #project-filter:hover {
+        display: block; /* Filteroptionen anzeigen, wenn über das Label oder die Optionen gehovert wird */
+    }
+
     .footer {
         display: flex;
         justify-content: space-between;
