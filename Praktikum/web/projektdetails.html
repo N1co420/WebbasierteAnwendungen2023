@@ -63,9 +63,11 @@
             </ul>
         </div>
         <div class="main_details">
-            <img class="logo" src="images/projects/1.png" alt="Project Logo">
-            <h1 class="main__title" id="titel">Projekt Titel</h1>
-            <p class="author">Projektleiter: Max Mustermann</p>
+            <div class="header_wrapper">
+                <img class="logo" src="images/projects/1.png" alt="Project Logo">
+                <h1 class="main__title" id="titel">Projekt Titel</h1>
+                <p class="author">Projektleiter: Max Mustermann</p>
+            </div>
             <div class="main__content">
                 <h3 class="main__content__title" id="kurzbeschreibung">Kurzbeschreibung</h3>
                 <p class="main__content__text" id="kurzbeschreibung-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -219,6 +221,122 @@
         width: 128px;
         margin-bottom: 4px;
     }
+
+    .main {
+        display: flex;
+    }
+
+    .main_overview {
+        width: 200px;
+        background-color: #ffffff;
+    }
+
+    .project_overview {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .overview_project_name {
+        padding: 0.5rem;
+        background-color: #ffffff;
+    }
+
+    .overview_project_name:hover {
+        background-color: #bbbbbb;
+    }
+
+    .main_details {
+        flex-grow: 1;
+        padding-left: 1rem;
+        border-left: 2px solid #442178;
+        margin-left: 1rem;
+    }
+
+    .header_wrapper {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #fff; /* Hintergrundfarbe des Headers */
+        padding: 1rem; /* Anpassen des Abstands innerhalb des Headers */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatteneffekt für den Header */
+        display: flex; /* Flexbox-Layout verwenden */
+        align-items: center; /* Elemente vertikal zentrieren */
+        justify-content: space-between; /* Platz zwischen Logo/Titel und Autor aufteilen */
+    }
+
+    .logo_wrapper {
+        display: inline-block;
+    }
+
+    .title_author_wrapper {
+        display: inline-block;
+        margin-left: 1rem; /* Anpassen des Abstands zwischen Logo und Titel/Author */
+    }
+
+    .logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        width: 250px; 
+        height: 50px; 
+    }
+
+    .main__title {
+        display: inline-block;
+        font-size: 2rem;
+        font-family: Arial, sans-serif; /* Schriftart */
+        color: #ffffff; /* Textfarbe  */
+        background-color: #1B1C1D; /* Hintergrundfarbe */
+        padding: 0.5rem 0.5rem; /* Anpassen des Abstands um den Titel herum */
+    }
+
+
+    .author {
+        font-family: Arial, sans-serif; /* Schriftart */
+        color: #ffffff; /* Textfarbe  */
+        background-color: #1B1C1D; /* Hintergrundfarbe */
+        padding: 0.5rem 0.5rem; /* Anpassen des Abstands um den Titel herum */
+        margin-left: auto; /* Autor ganz nach rechts verschieben */
+    }
+
+
+    .main__content {
+        margin-top: 2rem;
+    }
+
+    .main__content__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .main__content__text {
+        margin-top: 1rem;
+    }
+
+    .comment_form {
+        margin-top: 2rem;
+    }
+
+    .comment_form__textarea {
+        border: 1px solid black;
+        width: 100%;
+        max-width: 500px;
+        padding: 0.5rem;
+    }
+
+    .comment_form__textarea:focus {
+        background-color: white;
+    }
+
+    .comment_rating {
+        margin-top: 0.5rem;
+    }
+
+    .comment_form__button {
+        margin-top: 0.5rem;
+    }
+
 
     .footer {
         display: flex;
