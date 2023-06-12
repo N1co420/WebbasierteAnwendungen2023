@@ -22,13 +22,13 @@
                     <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
                 </svg>
             </a>
-            <a href="projekte.html" class="header_link">Projekte</a>
-            <a href="neuesprojekt.html" class="header_link">Neues Projekt</a>
+            <a href="projekte.html" class="header_link">#projects</a>
+            <a href="neuesprojekt.html" class="header_link">#newProject</a>
             <div class="header_login">
-                <input type="text" placeholder="Benutzername" id="user-name-input" class="header_login_input">
-                <button id="login-button" class="header_login_button">Login</button>
-                <input type="password" placeholder="Passwort" id="password-input" class="header_login_input">
-                <button id="register-button" class="header_login_button">Registrieren</button>
+                <input type="text" placeholder=#username id="user-name-input" class="header_login_input">
+                <button id="login-button" class="header_login_button">#login</button>
+                <input type="password" placeholder=#password id="password-input" class="header_login_input">
+                <button id="register-button" class="header_login_button">#register</button>
             </div>
         </div>
     </header>
@@ -36,17 +36,17 @@
         <h1>Neues Projekt</h1>
         <div>
             <form action="projekte.html" method="get">
-                <input type="text" placeholder="Projekttitel" required id= "projekttitel">
-                <input type="date" placeholder="Startdatum" required id= "start-date-input">
-                <input type="date" placeholder="Enddatum" required id= "end-date-input">
-                <input type="text" placeholder="Kurzbeschreibung" required id = "kurzbeschreibung">
-                <input type="text" placeholder="Langbeschreibung" id= "langbeschreibung">
-                <input type="text" placeholder="1. Projektziel" id= "1projektziel">
-                <input type="text" placeholder="2. Projektziel" id= "2projektziel">
+                <input type="text" placeholder="#projectTitle" required id= "projekttitel">
+                <input type="date" placeholder="#startDate" required id= "start-date-input">
+                <input type="date" placeholder="#endDate" required id= "end-date-input">
+                <input type="text" placeholder="#shortDescr" required id = "kurzbeschreibung">
+                <input type="text" placeholder="#longDescr" id= "langbeschreibung">
+                <input type="text" placeholder="#goal1" id= "1projektziel">
+                <input type="text" placeholder="#goal2" id= "2projektziel">
                 <input type="file" accept="image/*" hidden required id="logo-input">
-                <input type="button" value="Logo auswählen..."
+                <input type="button" value="#chooseLogo"
                     onclick="document.getElementById('logo-input').click();" />
-                <button type="submit" id="save-button">Speichern</button>
+                <button type="submit" id="save-button">#save</button>
             </form>
             <img hidden src="" alt="Logo" id="logo_showcase">
         </div>
@@ -55,16 +55,16 @@
         <div class="footer_content">
             <div class="footer_content_inner">
                 <a href="./impressum.html">
-                    <h3 class="footer_content_inner_title">Impressum</h3>
+                    <h3 class="footer_content_inner_title">#imprint</h3>
                 </a>
                 <a href="./datenschutz.html">
-                    <h3 class="footer_content_inner_title">Datenschutz</h3>
+                    <h3 class="footer_content_inner_title">#privacy</h3>
                 </a>
                 <a href="./haftungsausschluss.html">
-                    <h3 class="footer_content_inner_title">Haftungsausschluss</h3>
+                    <h3 class="footer_content_inner_title">#disclaimer</h3>
                 </a>
                 <a href="./kontakt.html">
-                    <h3 class="footer_content_inner_title">Kontakt</h3>
+                    <h3 class="footer_content_inner_title">#contact</h3>
                 </a>
                 <p class="footer_content_inner_copyright">© 2023 TaskHelper</p>
             </div>
@@ -79,6 +79,7 @@
             </a>
         </div>
     </footer>
+    <script src="script/neuesprojekt.js" type="module"></script>
 </body>
 
 <style>
