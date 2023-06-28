@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBoard</title>
+    <link rel="stylesheet" type="text/css" href="static/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/projektdetails.css" />
+</head>
+
+<body>
+    <header class="header">
+        <picture class="header__logo">
+            <source media="(min-width: 1920px)" srcset="images\header1920x200.png" type="image/png">
+            <source media="(min-width: 1280px)" srcset="images\header1280x133.png" type="image/png">
+            <source media="(min-width: 640px)" srcset="images\header640x67.png" type="image/png">
+            <img src="images\header320x34.png" alt="StudBoard Logo">
+        </picture>
+        <div class="header-infos">
+            <a href="index.html">
+                <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                </svg>
+            </a>
+            <a href="projekte.html" class="header-link">#projects</a>
+            <a href="neuesprojekt.html" class="header-link">#newProject</a>
+            <div class="header-login">
+                <input type="text" placeholder="#username" class="header-login__input" id="user-name-input">
+                <button class="header-login__button" id="login-button" onclick="onLogin()">#login</button>
+                <input type="password" placeholder="#password" class="header-login__input" id="password-input">
+                <button class="header-login__button" id="register-button">#register</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_overview">
+            <ul class="project_overview">
+                <li class="overview_project_name">
+                    <a href="#titel">
+                        <p class="project_name">#projectTitle</p>
+                    </a>
+                </li>
+                <li class="overview_project_name">
+                    <a href="#kurzbeschreibung">
+                        <p class="project_name">#shortDescr</p>
+                    </a>
+                </li>
+                <li class="overview_project_name">
+                    <a href="#beschreibung">
+                        <p class="project_name">#longDescr</p>
+                    </a>
+                </li>
+                <li class="overview_project_name">
+                    <a href="#ziele">
+                        <p class="project_name">#goals</p>
+                    </a>
+                </li>
+                <li class="overview_project_name">
+                    <a href="#ref_comment">
+                        <p class="project_name">#comment</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_details">
+            <img class="logo" src="images/projects/1.png" alt="Project Logo" id="project-logo">
+            <h1 class="main__title" id="titel">Projekt Titel</h1>
+            <p class="author">von TaskHelper</p>
+            <div class="main__content">
+                <h3 class="main__content__title" id="kurzbeschreibung">#shortDescr</h3>
+                <p class="main__content__text" id="kurzbeschreibung-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias laboriosam voluptate dolorem minima delectus eligendi exercitationem explicabo expedita.
+                    Incidunt quis quibusdam maxime, ipsa modi quam in ratione optio distinctio repudiandae?</p>
+                <h3 class="main__content__title" id="beschreibung">#longDescr</h3>
+                <p class="main__content__text" id="beschreibung-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias laboriosam voluptate dolorem minima delectus eligendi exercitationem explicabo expedita.
+                    Incidunt quis quibusdam maxime, ipsa modi quam in ratione optio distinctio repudiandae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias laboriosam voluptate dolorem minima delectus eligendi exercitationem explicabo expedita.
+                    Incidunt quis quibusdam maxime, ipsa modi quam in ratione optio distinctio repudiandae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <h3 class="main__content__title" id="ziele">#goals</h3>
+                <ol class="main__content__list" id="ziele-content">
+                    <li class="main__content__list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias laboriosam voluptate dolorem minima delectus eligendi exercitationem explicabo
+                        expedita.
+                        Incidunt quis quibusdam maxime, ipsa modi quam in ratione optio distinctio repudiandae?</li>
+                    <li class="main__content__list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias laboriosam voluptate dolorem minima delectus eligendi exercitationem explicabo
+                        expedita.
+                        Incidunt quis quibusdam maxime, ipsa modi quam in ratione optio distinctio repudiandae?</li>
+                </ol>
+            </div>
+            <h2>#comments</h2>
+            <div class="comments" id="ref_comment">
+                <template id="comment_template">
+                    <div>
+                        <p>Kommentar1</p>
+                        <p>Rating1</p>
+                        <p>Datum1</p>
+                    </div>
+                </template>
+            </div>
+            <form class="comment_form" method="get">
+                <h3 class="main__content__title">#comment</h3>
+                <textarea class="comment_form__textarea" name="comment" id="comment" cols="30" rows="3"
+                    required placeholder="#comment"
+                    style="max-width: 500px; "></textarea>
+                <label>#rating:
+                    <select class="comment_rating" id="rating" name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <button class="comment_form__button" type="submit">#sendcomment</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content__inner">
+                <a href="./impressum.html">
+                    <h3 class="footer__content__inner__title">#imprint</h3>
+                </a>
+                <a href="./datenschutz.html">
+                    <h3 class="footer__content__inner__title">#priacy</h3>
+                </a>
+                <a href="./haftungsausschluss.html">
+                    <h3 class="footer__content__inner__title">#disclaimer</h3>
+                </a>
+                <a href="./kontakt.html">
+                    <h3 class="footer__content__inner__title">#contact</h3>
+                </a>
+                <p class="footer__content__inner__copyright">© 2023 TaskHelper</p>
+            </div>
+            <div class="back-to-top">
+                <button class="back-to-top__btn" onclick="location.href='#top'">
+                    <svg class="back-to-top__btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="static/js/projektdetails.js" type="module"></script>
+    <script src="static/js/login.js"></script>
+</body>
+
+</html>

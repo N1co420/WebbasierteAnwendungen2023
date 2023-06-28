@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBoard</title>
+    <link rel="stylesheet" type="text/css" href="static/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/projekte.css" />
+</head>
+
+<body>
+    <header class="header">
+        <picture class="header__logo">
+            <source media="(min-width: 1920px)" srcset="images\header1920x200.png" type="image/png">
+            <source media="(min-width: 1280px)" srcset="images\header1280x133.png" type="image/png">
+            <source media="(min-width: 640px)" srcset="images\header640x67.png" type="image/png">
+            <img src="images\header320x34.png" alt="StudBoard Logo">
+        </picture>
+        <div class="header-infos">
+            <a href="index.html">
+                <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                </svg>
+            </a>
+            <a href="projekte.html" class="header-link">#projects</a>
+            <a href="neuesprojekt.html" class="header-link">#newProject</a>
+            <div class="header-login">
+                <input type="text" placeholder="#username" class="header-login__input" id="user-name-input">
+                <button class="header-login__button" id="login-button" onclick="onLogin()">#login</button>
+                <input type="password" placeholder="#password" class="header-login__input" id="password-input">
+                <button class="header-login__button" id="register-button">#register</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="main__title">#projects</h1>
+        <div class="main__content">
+            <label class="projectlist__label" for="project-filter">#filter</label>
+            <select class="projectlist__select" id="project-filter">
+                <option value="all">#allProjects</option>
+                <option value="date">#startDate</option>
+                <option value="time">#runTime</option>
+            </select>
+            <div class="projectlist">
+                <div id="project_overview">
+                    <ul class="project_overview">
+                        <li class="overview_project_name">
+                            <a href="projektdetails.html?id=1">
+                                <p class="project_name">Projektname</p>
+                            </a>
+                        </li>
+                        <li class="overview_project_name">
+                            <a href="projektdetails.html?id=1">
+                                <p class="project_name">Projektname</p>
+                            </a>
+                        </li>
+                        <li class="overview_project_name">
+                            <a href="projektdetails.html?id=1">
+                                <p class="project_name">Projektname</p>
+                            </a>
+                        </li>
+                        <li class="overview_project_name">
+                            <a href="projektdetails.html?id=1">
+                                <p class="project_name">Projektname</p>
+                            </a>
+                        </li>
+                        <li class="overview_project_name">
+                            <a href="projektdetails.html?id=1">
+                                <p class="project_name">Projektname</p>
+                            </a>
+                        </li>
+                        <li class="overview_project_name">
+                            <a href="projektdetails.html?id=1">
+                                <p class="project_name">Projektname</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="project_grid" class="project_grid">
+                    <template id="project-template">
+                        <div class="project_grid_item">
+                            <div class="project_grid_item_content">
+                                <div class="project_grid_item_content_title">
+                                    <a href="projektdetails.html?id=1">
+                                        <h2>Projekt 1</h2>
+                                    </a>
+                                </div>
+                                <div class="project_grid_item_content_description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel
+                                        hendrerit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <div class="project_grid_item">
+                        <div class="project_grid_item_content">
+                            <div class="project_grid_item_content_title">
+                                <a href="projektdetails.html?id=1">
+                                    <h2>Projekt 1</h2>
+                                </a>
+                            </div>
+                            <div class="project_grid_item_content_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel
+                                    hendrerit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_grid_item">
+                        <div class="project_grid_item_content">
+                            <div class="project_grid_item_content_title">
+                                <a href="projektdetails.html?id=1">
+                                    <h2>Projekt 1</h2>
+                                </a>
+                            </div>
+                            <div class="project_grid_item_content_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel
+                                    hendrerit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_grid_item">
+                        <div class="project_grid_item_content">
+                            <div class="project_grid_item_content_title">
+                                <a href="projektdetails.html?id=1">
+                                    <h2>Projekt 1</h2>
+                                </a>
+                            </div>
+                            <div class="project_grid_item_content_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel
+                                    hendrerit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_grid_item">
+                        <div class="project_grid_item_content">
+                            <div class="project_grid_item_content_title">
+                                <a href="projektdetails.html?id=1">
+                                    <h2>Projekt 1</h2>
+                                </a>
+                            </div>
+                            <div class="project_grid_item_content_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel
+                                    hendrerit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_grid_item">
+                        <div class="project_grid_item_content">
+                            <div class="project_grid_item_content_title">
+                                <a href="projektdetails.html?id=1">
+                                    <h2>Projekt 1</h2>
+                                </a>
+                            </div>
+                            <div class="project_grid_item_content_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel
+                                    hendrerit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content__inner">
+                <a href="./impressum.html">
+                    <h3 class="footer__content__inner__title">#imprint</h3>
+                </a>
+                <a href="./datenschutz.html">
+                    <h3 class="footer__content__inner__title">#priacy</h3>
+                </a>
+                <a href="./haftungsausschluss.html">
+                    <h3 class="footer__content__inner__title">#disclaimer</h3>
+                </a>
+                <a href="./kontakt.html">
+                    <h3 class="footer__content__inner__title">#contact</h3>
+                </a>
+                <p class="footer__content__inner__copyright">© 2023 TaskHelper</p>
+            </div>
+            <div class="back-to-top">
+                <button class="back-to-top__btn" onclick="location.href='#top'">
+                    <svg class="back-to-top__btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="static/js/projekte.js" type="module"></script>
+    <script src="static/js/login.js"></script>
+</body>
+
+</html>

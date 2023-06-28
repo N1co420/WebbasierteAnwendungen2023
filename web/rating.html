@@ -1,0 +1,25 @@
+<!-- Get GET requests and prints it-->
+<html> 
+<head>
+<title>Rating</title>
+</head>
+<body>
+    <div>
+        <p>Comment:</p>
+        <p id="comment"></p>
+    </div>
+    
+    <div>
+        <p>Rating:</p>
+        <p id="rating"></p>
+    </div>
+</body>
+<script>
+    // Get contet from GET
+    const url = new URL(window.location.href);
+    let r = url.searchParams.get("rating");
+    let c = url.searchParams.get("comment");
+    document.getElementById("comment").innerHTML = c;
+    document.getElementById("rating").innerHTML = r;    
+</script>
+</html>

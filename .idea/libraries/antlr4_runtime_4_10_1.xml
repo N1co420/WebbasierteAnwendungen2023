@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="antlr4-runtime-4.10.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/antlr4-runtime-4.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/byte-buddy-1.12.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/classmate-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/hibernate-commons-annotations-6.0.6.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/hibernate-core-6.1.7.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/jackson-dataformat-xml-2.14.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/jakarta.inject-api-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/jakarta.xml.bind-api-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/jandex-2.4.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/jaxb-runtime-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/jboss-logging-3.4.3.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Praktikum/libs/hibernate/slf4j-api-1.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

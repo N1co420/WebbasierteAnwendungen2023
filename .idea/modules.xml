@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/WBA2023.iml" filepath="$PROJECT_DIR$/.idea/WBA2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WBA-Projekt.iml" filepath="$PROJECT_DIR$/WBA-Projekt.iml" />
     </modules>
   </component>
 </project>
